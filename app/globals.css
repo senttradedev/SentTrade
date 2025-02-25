@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -9,11 +10,45 @@
   --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: #18181b;
-  color: white;
-  font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
-  font-variant-ligatures: no-contextual;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 158 100% 46%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 158 100% 46%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 13%;
+    --input: 0 0% 13%;
+    --ring: 158 100% 46%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['IBM_Plex_Sans'];
+    background: #000000;
+    color: white;
+    font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
+    font-variant-ligatures: no-contextual;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -22,16 +57,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #18181b;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a2d;
+  background: #111111;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a3d;
+  background: #222222;
 }
 
 :root {
