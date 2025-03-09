@@ -1,0 +1,234 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/BridgeExecutor.sol": {
+      "lastModificationDate": 1740765485370,
+      "contentHash": "0e42aaefa0aaf9ef6a60ad37bdc03a0d",
+      "sourceName": "contracts/BridgeExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "BridgeExecutor",
+        "IDeBridgeGate"
+      ]
+    },
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/MetricsAggregator.sol": {
+      "lastModificationDate": 1740765614439,
+      "contentHash": "9173f7d4fe79de8b1c053820607e7eb2",
+      "sourceName": "contracts/MetricsAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "MetricsAggregator"
+      ]
+    },
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/StrategyManager.sol": {
+      "lastModificationDate": 1740852251426,
+      "contentHash": "758416edd14b8ba9962f58a261ebafa1",
+      "sourceName": "contracts/StrategyManager.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITradingExecutor.sol",
+        "./interfaces/IBridgeExecutor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "StrategyManager"
+      ]
+    },
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/interfaces/ITradingExecutor.sol": {
+      "lastModificationDate": 1740827792349,
+      "contentHash": "1694f5e614a633c24797427a11f585f5",
+      "sourceName": "contracts/interfaces/ITradingExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "ITradingExecutor"
+      ]
+    },
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/interfaces/IBridgeExecutor.sol": {
+      "lastModificationDate": 1740827420751,
+      "contentHash": "c7d35f09d849d915d9916a2256299d84",
+      "sourceName": "contracts/interfaces/IBridgeExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "IBridgeExecutor"
+      ]
+    },
+    "/Users/albertmends/Documents/2025-Hackathon/sentTrade/contracts/TradingExecutor.sol": {
+      "lastModificationDate": 1740827792349,
+      "contentHash": "c8254af9466f5d46e7493398fa281a9d",
+      "sourceName": "contracts/TradingExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITradingExecutor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "ISonicRouter",
+        "TradingExecutor"
+      ]
+    }
+  }
+}

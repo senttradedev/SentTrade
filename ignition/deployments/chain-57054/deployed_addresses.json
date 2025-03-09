@@ -1,0 +1,6 @@
+{
+  "DeploymentModule#BridgeExecutor": "0x8871B9CAA48e526f4A1f9a51B031dCE052514661",
+  "DeploymentModule#MetricsAggregator": "0xAEE6039F5bC4b5230B1Df596d348ed2cDB96f5cf",
+  "DeploymentModule#TradingExecutor": "0x5e7Ecb96C61Ba252ECdAE66f6A37ABE2D1B9056E",
+  "DeploymentModule#StrategyManager": "0xCfbDcA34A18119F6955Eb4Bcd4794Ce12d7Fcf37"
+}

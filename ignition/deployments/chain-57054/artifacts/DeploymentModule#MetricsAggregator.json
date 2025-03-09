@@ -1,0 +1,129 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MetricsAggregator",
+  "sourceName": "contracts/MetricsAggregator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenMetrics",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "volume24h",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "liquidity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "volatility",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastUpdate",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MetricsAggregator.TokenMetrics",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "tokenMetrics",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume24h",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volatility",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdate",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volatility",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateMetrics",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080806040523460155761025d908161001b8239f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c80633ec109c414610129578063c66fd448146100c35763e41f6e5f1461003d57600080fd5b346100be5760a03660031901126100be576100566101db565b60046100606101f1565b91602435835260208301604435815260408401606435815260608501916084358352608086019342855260018060a01b0316600052600060205260406000209551865551600186015551600285015551600384015551910155600080f35b600080fd5b346100be5760203660031901126100be576001600160a01b036100e46101db565b16600052600060205260a06040600020805490600181015490600281015460046003830154920154926040519485526020850152604084015260608301526080820152f35b346100be5760203660031901126100be576101426101db565b6000608061014e6101f1565b828152826020820152826040820152826060820152015260018060a01b0316600052600060205260a060406000206101846101f1565b81549182825260018101546020830190815260028201549060408401918252608060046003850154946060870195865201549401938452604051948552516020850152516040840152516060830152516080820152f35b600435906001600160a01b03821682036100be57565b6040519060a0820182811067ffffffffffffffff82111761021157604052565b634e487b7160e01b600052604160045260246000fdfea26469706673582212208b3c86466792be04d474cad4da41f356e4d97627699a4060b3d7fbf94e12c94d64736f6c634300081c0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c80633ec109c414610129578063c66fd448146100c35763e41f6e5f1461003d57600080fd5b346100be5760a03660031901126100be576100566101db565b60046100606101f1565b91602435835260208301604435815260408401606435815260608501916084358352608086019342855260018060a01b0316600052600060205260406000209551865551600186015551600285015551600384015551910155600080f35b600080fd5b346100be5760203660031901126100be576001600160a01b036100e46101db565b16600052600060205260a06040600020805490600181015490600281015460046003830154920154926040519485526020850152604084015260608301526080820152f35b346100be5760203660031901126100be576101426101db565b6000608061014e6101f1565b828152826020820152826040820152826060820152015260018060a01b0316600052600060205260a060406000206101846101f1565b81549182825260018101546020830190815260028201549060408401918252608060046003850154946060870195865201549401938452604051948552516020850152516040840152516060830152516080820152f35b600435906001600160a01b03821682036100be57565b6040519060a0820182811067ffffffffffffffff82111761021157604052565b634e487b7160e01b600052604160045260246000fdfea26469706673582212208b3c86466792be04d474cad4da41f356e4d97627699a4060b3d7fbf94e12c94d64736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
