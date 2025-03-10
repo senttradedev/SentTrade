@@ -72,6 +72,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -175,7 +176,13 @@ const LastUpdated = () => {
 };
 
 // Add this component for price movement indicators
-const PriceMovement = ({ value, isPositive }) => {
+const PriceMovement = ({
+  value,
+  isPositive,
+}: {
+  value: number;
+  isPositive: boolean;
+}) => {
   const [blink, setBlink] = useState(false);
 
   useEffect(() => {
@@ -557,6 +564,7 @@ export default function DashboardPage() {
   const [addPortfolioOpen, setAddPortfolioOpen] = useState(false);
   const [newPortfolioAddress, setNewPortfolioAddress] = useState("");
   const [addressError, setAddressError] = useState("");
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
 
   // Add this near the other state variables
   const tokenSymbols = ["ETH", "BTC", "USDC", "MATIC", "SOL", "AVAX"];
@@ -1536,7 +1544,7 @@ export default function DashboardPage() {
           </nav>
 
           {/* Market Status */}
-          <div className="p-4 border-t border-[#222222]">
+          {/* <div className="p-4 border-t border-[#222222]">
             <div className="bg-[#111111] rounded-lg p-3">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-2 h-2 bg-[#00E99E] rounded-full animate-pulse"></div>
@@ -1557,7 +1565,7 @@ export default function DashboardPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* User Profile */}
           <div className="p-4 border-t border-[#222222]">
@@ -2556,6 +2564,52 @@ export default function DashboardPage() {
               Add Portfolio
             </Button>
           </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={isCreateModalOpen} onOpenChange={setIsCreateModalOpen}>
+        <DialogTrigger asChild>
+          <Button>Create Strategy</Button>
+        </DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Create New Strategy</DialogTitle>
+            <DialogDescription>
+              Configure your new trading strategy based on sentiment analysis.
+            </DialogDescription>
+          </DialogHeader>
+
+          {/* Strategy creation form */}
+          <form className="space-y-4">
+            <div className="space-y-2">
+              <label htmlFor="name">Strategy Name</label>
+              <input
+                id="name"
+                type="text"
+                className="w-full p-2 border rounded"
+                placeholder="Enter strategy name"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="description">Description</label>
+              <textarea
+                id="description"
+                className="w-full p-2 border rounded"
+                placeholder="Describe your strategy"
+              />
+            </div>
+
+            <div className="flex justify-end gap-2">
+              <Button
+                variant="outline"
+                onClick={() => setIsCreateModalOpen(false)}
+              >
+                Cancel
+              </Button>
+              <Button type="submit">Create</Button>
+            </div>
+          </form>
         </DialogContent>
       </Dialog>
     </>
